@@ -1,0 +1,741 @@
+Program#1
+Write a program to assigned values to three variables at the time of declaration. Print the assigned values on the computer screen.
+Code in C:
+#include <stdio.h>
+int main() {
+    int a = 5, b = 10, c = 15;
+    printf("a = %d\n b = %d\n c = %d\n", a, b, c);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 10, c = 15;
+    cout << "a = " << a << "\nb = " << b << "\nc = " << c << '\n';
+    return 0;
+}
+
+Code In Python:
+a, b, c = 5, 10, 15
+print("a =", a)
+print("b =", b)
+print("c =", c)
+
+
+ 
+Program#2
+Write a program to print a message "C language is a powerful programing language." on screen.
+Code in C:
+#include <stdio.h>
+int main() {
+    printf("C language is a powerful programing language. ");
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "C language is a powerful programing language." << endl;
+    return 0;
+}
+Code In Python:
+print("C language is a powerful programing language.")
+Program#3
+Write a program to assign two varibles by assignment statement. Interchange the values and print the result on the screen
+Code in C:
+#include <stdio.h>
+int main() {
+    int x = 7, y = 12, temp;
+      temp = x;
+       x = y;
+    y = temp;
+    printf("Interchanged Values: x = %d, y = %d\n", x, y);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 7, y = 12, temp;
+    temp = x;
+    x = y;
+    y = temp;
+    cout << "After swap: x = " << x << ", y = " << y << '\n';
+    return 0;
+}
+Code in Python:
+x, y = 7, 12
+x, y = y, x
+print("After swap: x =", x, ", y =", y)
+Program#4:
+Write a program to assign the numeric value to a variable year. Calculate the number of months, and print on the screen.
+Code in C:
+#include <stdio.h>
+int main() {
+    int year, presentYear, months;
+    scanf("%d %d", &year, &presentYear);
+    months = (presentYear - year) * 12;
+    printf("Months: %d", months);
+    return 0;}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int year, presentYear, months;
+    cin >> year >> presentYear;
+    months = (presentYear - year) * 12;
+    cout << "Months: " << months;
+    return 0;
+}
+Code in Python:
+year = int(input())
+present_year = int(input())
+months = (present_year - year) * 12
+print("Months:", months) 
+Program#5
+Write a program to get two numbers. Calculate the sum and product of the numbers and then print the result on the screen.
+Code in C:
+ #include <stdio.h>
+int main() {
+   int a, b;
+    scanf("%d %d", &a, &b);
+    printf("Sum = %d \n Product = %d \n", a + b, a * b);
+    return 0;
+}
+
+ 
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+int a, b;
+    cin >> a >> b;
+    cout << "Sum = " << a + b << endl;
+    cout << "Product = " << a * b << endl;
+    return 0;
+}
+Code in Python:
+a, b = map(int, input().split())
+print("Sum =", a + b)
+print("Product =", a * b) 
+Program#6
+Write a program to get age (in years) of a person. Calculate the age in months and print the age in months
+Code in C:
+#include <stdio.h>
+int main() {
+    int years;
+    scanf("%d", &years);
+    printf("Age in months = %d\n", years * 12);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int years;
+    cin >> years;
+    cout << "Age in months = " << years * 12 << endl;
+    return 0;
+}
+Code in JavaScript:
+const readline = require('readline');
+const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+rl.question('', input => {
+  const years = Number(input);
+  console.log('Age in months =', years * 12);
+  rl.close();
+});
+Code in Python:
+years = int(input())
+print("Age in months =", years * 12)
+Program#7:
+Write a program to get the Roll No. of a student and marks obtained in three subject Programming Fundamentals, Introduction to Computing and Computer Graphics. Calculate the Total and Average. Each subject has a maximum of 100 marks.
+Code in C:
+#include <stdio.h>
+int main() {
+    int rollNo;
+    float pf, ic, cg, total, average;
+    scanf("%d", &rollNo);
+    scanf("%f %f %f", &pf, &ic, &cg);
+    total = pf + ic + cg;
+    average = total / 3;
+    printf("Roll No: %d\n", rollNo);
+    printf("Total: %.2f\n", total);
+    printf("Average: %.2f", average);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int rollNo;
+    float pf, ic, cg, total, average;
+    cin >> rollNo >> pf >> ic >> cg;
+    total = pf + ic + cg;
+    average = total / 3;
+    cout << "Roll No: " << rollNo << endl;
+    cout << "Total: " << total << endl;
+    cout << "Average: " << average;
+    return 0;
+}
+Code in Python:
+roll_no = int(input())
+pf = float(input())
+ic = float(input())
+cg = float(input())
+total = pf + ic + cg
+average = total / 3
+print("Roll No:", roll_no)
+print("Total:", total)
+print("Average:", average)
+Program#8
+Write a program to get temperature in Fahrenheit. Convert the temperature to Celsius degrees by using the formula.
+			C = 5/9(f - 32)
+Code in C:
+#include <stdio.h>
+int main() {
+    float f;
+    scanf("%f", &f);
+    float c = 5.0 / 9.0 * (f - 32);
+    printf("Celsius = %.2f\n", c);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    double f;
+    cin >> f;
+    double c = 5.0 / 9.0 * (f - 32);
+    cout << "Celsius = " << c << endl;
+    return 0;
+} 
+Code in Python:
+f = float(input())
+c = 5 / 9 * (f - 32)
+print("Celsius =", c)
+Program#9
+Write a program to find the maximum number from four numbers
+Code in C:
+#include <stdio.h>
+int main() {
+    int a, b, c, d, max;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    max = a;
+    if (b > max) max = b;
+    if (c > max) max = c;
+    if (d > max) max = d;
+    printf("Maximum = %d\n", max);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int a, b, c, d;
+    cin >> a >> b >> c >> d;
+    int max = a;
+    if (b > max) max = b;
+    if (c > max) max = c;
+    if (d > max) max = d;
+    cout << "Maximum = " << max << endl;
+    return 0;}
+Code in python:
+nums = list(map(int, input().split()))
+print("Maximum =", max(nums))
+Program#10
+Write a program to convert 2.5 miles into kilometers and print the result on screen. (Hint: 1 mile = 1.609 kilometers)
+Code in C:
+#include <stdio.h>
+int main() {
+    float miles = 2.5;
+    float km = miles * 1.609;
+    printf("Kilometers = %.3f\n", km);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    double miles = 2.5;
+    double km = miles * 1.609;
+    cout << "Kilometers = " << km << endl;
+    return 0;
+}
+Code in Python:
+miles = 2.5
+km = miles * 1.609
+print("Kilometers =", km)
+Program#11
+Declare and initialize two int variables, find average, print result
+Code in C:
+#include <stdio.h>
+int main() {
+    int a = 8, b = 12;
+    float avg = (a + b) / 2.0;
+    printf("Average = %.2f\n", avg);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 8, b = 12;
+    double avg = (a + b) / 2.0;
+    cout << "Average = " << avg << endl;
+    return 0;
+}
+Code in Python:
+a, b = 8, 12
+avg = (a + b) / 2
+print("Average =", avg)
+
+
+
+Program#12
+Write a program to find the volume of a cylinder by using 'const' qualifier. The formula to find the volume of a cylinder is:
+		Volume =πR^2 xH     The value of π is 3.1417
+Code in C:
+#include <stdio.h>
+int main() {
+    const float pi = 3.1417;
+    float r = 4, h = 10;
+    float volume = pi * r * r * h;
+    printf("Volume = %.3f\n", volume);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    const double pi = 3.1417;
+    double r = 4, h = 10;
+    double volume = pi * r * r * h;
+    cout << "Volume = " << volume << endl;
+    return 0;
+}
+Program#13
+Write a program using define directive to find the area of a circle. The formula to find the area of a circle is:
+		Area =πR^2      The value of π is 3.1417
+Code in C:
+#include <stdio.h>
+#define PI 3.1417
+int main() {
+    int r = 5;
+    float area = PI * r * r;
+    printf("Area = \n", area);
+    return 0;}
+Program#14
+Write a program to convert millimeters into inches and print the result on screen. (Hint: 1 inch = 25.4 mm)
+Code in C:
+#include <stdio.h>
+int main() {
+    float mm = 50;
+    float inches = mm / 25.4;
+    printf("Inches = %.3f\n", inches);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+int millimeter= 50;
+    float inches = millimeter / 25.4;
+    cout << "Inches = " << inches << endl;
+    return 0;
+}
+Program#15
+Write a program to interchange values of two variables.
+Code in C:
+#include <stdio.h>
+int main() {
+    int a = 5, b = 10, t;
+    t = a;
+    a = b;
+    b = t;
+    printf("a = %d, b = %d\n", a, b);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 10, t;
+    t = a;
+    a = b;
+    b = t;
+    cout << "a = " << a << ", b = " << b << endl;
+    return 0;
+}
+Program#16
+Write a program to assign a value 3 to "int" type variables a, b and c using multiple assignment statement. Calculate the product of these numbers.
+Code in C:
+#include <stdio.h>
+int main() {
+    int a = 3, b = 3, c = 3;
+    int product = a * b * c;
+    printf("Product = %d\n", product);
+    return 0;
+}
+Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 3, b = 3, c = 3;
+    int product = a * b * c;
+    cout << "Product = " << product << endl;
+    return 0;
+}
+Code in  Python:
+a = b = c = 3
+print("Product =", a * b * c)
+Program#17
+ Separate integral and fractional parts of 15.58971
+Code in C:
+#include <stdio.h>
+int main() {
+    double n = 15.58971;
+    int i = (int)n;
+    double f = n - i;
+    printf("Integral = %d\nFractional = %.5f\n", i, f);
+    return 0;
+}
+ Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    double n = 15.58971;
+    int i = (int)n;
+    double f = n - i;
+    cout << "Integral = " << i << endl;
+    cout << "Fractional = " << f << endl;
+    return 0;
+}
+Code in Python:
+n = 15.58971
+i = int(n)
+f = n - i
+print("Integral =", i)
+print("Fractional =", f)
+Program#18
+Write a program to assign values to variables 'vi' and 't' an compute the value of 's' by using the formula:
+			S=vi*t+  1/2  〖at〗^2
+
+Code in C:
+#include <stdio.h>
+int main() {
+    float vi = 10, t = 5;
+    float s = vi * t;
+    printf("s = %.2f\n", s);
+    return 0;
+}
+Code  in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    double vi = 10, t = 5;
+    double s = vi * t;
+    cout << "s = " << s << endl;
+    return 0;
+}
+Code in Python:
+vi, t = 10, 5
+s = vi * t
+print("s =", s)
+Program#19
+Write a program to assign your age in a variable and find the age in months and days.
+Code in C:
+#include <stdio.h>
+int main() {
+    int years = 20;
+    int months = years * 12;
+    int days = years * 365;
+    printf("Age in months = %d\nAge in days = %d\n", months, days);
+    return 0;
+}
+ Code in C++:
+#include <iostream>
+using namespace std;
+int main() {
+    int years = 20;
+    int months = years * 12;
+    int days = years * 365;
+    cout << "Age in months = " << months << endl;
+    cout << "Age in days = " << days << endl;
+    return 0;
+}
+Code in Python
+years = 20
+months = years * 12
+days = years * 365
+print("Age in months =", months)
+print("Age in days =", days)
+
+Program#20
+ Write a program to print the output as given under by using escape sequence.   
+				C:\Windows>
+				'P'     'A'     'K'
+				"Pakistan"
+Code in C:
+#include <stdio.h>
+int main() {
+    printf("C:\\Windows>\n'P'\t'A'\t'K'\n\"Pakistan\"\n");
+    return 0;
+}
+Code in C++
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "C:\\Windows>\n'P'\t'A'\t'K'\n\"Pakistan\"" << endl;
+    return 0;
+}
+
+
+Code in Python
+print("C:\\Windows>")
+print("'P'\t'A'\t'K'")
+print("\"Pakistan\"")
+
+
+
+Program#21
+ 
+Write a program to print the output as shown below using '\n' escape sequence (without using loop and use one printf statement)
+	XXXXX
+	XXXX
+	XXX
+	XX
+	X
+
+C
+#include <stdio.h>
+int main() {
+    printf("XXXXX\nXXXX\nXXX\nXX\nX\n");
+    return 0;
+}
+C++
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "XXXXX\nXXXX\nXXX\nXX\nX\n";
+    return 0;
+}
+Python
+print("XXXXX\nXXXX\nXXX\nXX\nX")
+
+Program#22
+Write a program to input the name, age, height and gender of the student and prints the data of student on screen.
+C
+#include <stdio.h>
+int main() {
+    char name[50], gender[10];
+    int age;
+    float height;
+    scanf("%s %d %f %s", name, &age, &height, gender);
+    printf("Name: %s\nAge: %d\nHeight: %.2f\nGender: %s\n", name, age, height, gender);
+    return 0;
+}
+C++
+#include <iostream>
+using namespace std;
+int main() {
+    string name, gender;
+    int age;
+    double height;
+    cin >> name >> age >> height >> gender;
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+    cout << "Height: " << height << endl;
+    cout << "Gender: " << gender << endl;
+    return 0;
+}
+Python
+name, age, height, gender = input().split()
+print("Name:", name)
+print("Age:", age)
+print("Height:", height)
+print("Gender:", gender)
+Proagram#23
+ Input radius, find area and circumference
+C
+#include <stdio.h>
+int main() {
+    float r;
+    scanf("%f", &r);
+    float area = 3.1416 * r * r;
+    float circum = 2 * 3.1416 * r;
+    printf("Area = %.2f\nCircumference = %.2f\n", area, circum);
+    return 0;
+}
+C++
+#include <iostream>
+using namespace std;
+int main() {
+    double r;
+    cin >> r;
+    double area = 3.1416 * r * r;
+    double circum = 2 * 3.1416 * r;
+    cout << "Area = " << area << endl;
+    cout << "Circumference = " << circum << endl;
+    return 0;
+}
+Python
+r = float(input())
+area = 3.1416 * r * r
+circum = 2 * 3.1416 * r
+print("Area =", area)
+print("Circumference =", circum)
+
+Program#24
+ Input marks of 5 subjects, calculate total and average
+C
+#include <stdio.h>
+int main() {
+    float a, b, c, d, e;
+    scanf("%f %f %f %f %f", &a, &b, &c, &d, &e);
+    float total = a + b + c + d + e;
+    float avg = total / 5;
+    printf("Total = %.2f\nAverage = %.2f\n", total, avg);
+    return 0;
+}
+C++
+#include <iostream>
+using namespace std;
+int main() {
+    double a, b, c, d, e;
+    cin >> a >> b >> c >> d >> e;
+    double total = a + b + c + d + e;
+    double avg = total / 5;
+    cout << "Total = " << total << endl;
+    cout << "Average = " << avg << endl;
+    return 0;
+}
+Python
+marks = list(map(float, input().split()))
+total = sum(marks)
+avg = total / 5
+print("Total =", total)
+print("Average =", avg)
+
+Program#26. 
+Convert 12000 rupees into dollars (1 dollar = 60 rupees)
+C
+#include <stdio.h>
+int main() {
+    float rupees = 12000;
+    float dollars = rupees / 60;
+    printf("Dollars = %.2f\n", dollars);
+    return 0;
+}
+C++
+#include <iostream>
+using namespace std;
+int main() {
+    double rupees = 12000;
+    double dollars = rupees / 60;
+    cout << "Dollars = " << dollars << endl;
+    return 0;
+}
+Python
+rupees = 12000
+dollars = rupees / 60
+print("Dollars =", dollars)
+
+Program#27
+ Input time in hours, minutes, seconds; convert to seconds
+C
+#include <stdio.h>
+int main() {
+    int h, m, s;
+    scanf("%d %d %d", &h, &m, &s);
+    int total = h * 3600 + m * 60 + s;
+    printf("Seconds = %d\n", total);
+    return 0;
+}
+C++
+#include <iostream>
+using namespace std;
+int main() {
+    int h, m, s;
+    cin >> h >> m >> s;
+    int total = h * 3600 + m * 60 + s;
+    cout << "Seconds = " << total << endl;
+    return 0;
+}
+
+Python
+h, m, s = map(int, input().split())
+print("Seconds =", h * 3600 + m * 60 + s)
+
+Program#28
+ Compute disc = b² - 4ac
+C
+#include <stdio.h>
+int main() {
+    float a, b, c;
+    scanf("%f %f %f", &a, &b, &c);
+    float disc = b * b - 4 * a * c;
+    printf("Disc = %.2f\n", disc);
+    return 0;
+}
+C++
+#include <iostream>
+using namespace std;
+int main() {
+    double a, b, c;
+    cin >> a >> b >> c;
+    double disc = b * b - 4 * a * c;
+    cout << "Disc = " << disc << endl;
+    return 0;
+}
+Python
+a, b, c = map(float, input().split())
+print("Disc =", b * b - 4 * a * c)
+________________________________________
+Program#29
+ Print message if n > 100
+C
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    if (n > 100) printf("Value is greater than 100\n");
+    return 0;
+}
+C++
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    if (n > 100) cout << "Value is greater than 100" << endl;
+    return 0;
+}
+Python
+n = int(input())
+if n > 100:
+    print("Value is greater than 100")
+
+Program#30
+ Test whether integer is odd or even
+C
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    if (n % 2 == 0) printf("Even\n"); else printf("Odd\n");
+    return 0;
+}
+C++
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    if (n % 2 == 0) cout << "Even" << endl; else cout << "Odd" << endl;
+    return 0;}
+Python
+n = int(input())
+print("Even" if n % 2 == 0 else "Odd")
+
